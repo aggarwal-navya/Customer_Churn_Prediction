@@ -92,56 +92,21 @@ docker run -p 5001:5001 churnguard-pro
 
 ---
 
-## ⚠️ Running This Project on Another PC (Required Changes)
+## ⚠️ Transferring to a New PC (Avoid Path Errors)
 
-If you move/copy this repository to another machine, do these steps before running. This prevents absolute-path issues (for example `C:\Users\old-user\...`) and MLflow permission errors.
+If you copy the project to another computer and run into errors containing path links like `C:\Users\agarw\...`, it is because **virtual environments and editable installations are machine-specific**. 
 
-### 1. Remove machine-specific folders/files
-Delete these if they exist in the copied project:
+Follow these steps to migrate the project cleanly:
 
-```bash
-# Windows PowerShell
-Remove-Item -Recurse -Force env, .venv, customer_churn.egg-info, customer_churn_prediction.egg-info
-```
-
-Notes:
-- `env/` or `.venv/` contains interpreter paths from the old machine.
-- `*.egg-info` can keep stale editable-install metadata.
-
-### 2. Create and activate a fresh virtual environment
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-python -m pip install --upgrade pip
-```
-
-### 3. Reinstall project dependencies
-
-```bash
-pip install -r requirements.txt
-pip install -e .
-```
-
-### 4. Reset MLflow local state (recommended on first run)
-
-```bash
-# Optional but recommended when repo was copied from another PC
-Remove-Item -Recurse -Force mlruns -ErrorAction SilentlyContinue
-Remove-Item -Force mlflow.db -ErrorAction SilentlyContinue
-```
-
-Why:
-- Old MLflow experiments can point to non-writable artifact locations from another user profile.
-- The training code now auto-falls back to a writable local experiment, but resetting gives a clean history.
-
-### 5. Run training and app
-
-```bash
-python main.py
-python app.py
-```
-
-### 6. If you still get permission errors
-Check that the project is not under a protected directory and run PowerShell as a normal user from your project folder (for example under `D:\Projects\...`), then retry steps 2-5.
+1. **Do NOT copy the `.venv` folder:** Virtual environments contain hardcoded absolute paths pointing to the original computer. Delete the `.venv` folder on the new computer.
+2. **Recreate the environment:** Create a fresh virtual environment on the new PC:
+   ```bash
+   python -m venv .venv
+   ```
+3. **Reinstall dependencies:** Activate the new virtual environment and run:
+   ```bash
+   pip install -r requirements.txt
+   pip install -e .
+   ```
+   Re-running `pip install -e .` updates the local configuration links (like `.egg-link` and `.egg-info` records) to point to the new folder location.
 

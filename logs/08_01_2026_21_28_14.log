@@ -1,0 +1,7 @@
+[ 2026-08-01 21:28:16,514 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 21:28:16,530 ] 97 werkzeug - INFO -  * Debugger PIN: 100-496-751
+[ 2026-08-01 21:40:12,321 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:40:12] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 21:40:12,801 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:40:12] "GET /static/js/main.js HTTP/1.1" 200 -
+[ 2026-08-01 21:40:12,813 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:40:12] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2026-08-01 21:40:14,545 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:40:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-08-01 21:49:21,134 ] 97 werkzeug - INFO -  * Detected change in 'c:\\users\\agarw\\downloads\\customer_churn_prediction_project-main\\customer_churn_prediction_project-main\\setup.py', reloading

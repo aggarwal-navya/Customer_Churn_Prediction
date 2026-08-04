@@ -1,0 +1,106 @@
+[ 2026-08-01 21:14:29,582 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 21:14:29,590 ] 97 werkzeug - INFO -  * Debugger PIN: 100-496-751
+[ 2026-08-01 21:17:52,110 ] 185 root - INFO - Received prediction request for: Alex Vibe
+[ 2026-08-01 21:17:52,115 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:17:52,115 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:17:52,115 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:17:52,115 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:17:52,265 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:17:52,310 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:17:52,310 ] 230 root - INFO - Prediction result: Safe (Prob: 0.12)
+[ 2026-08-01 21:17:52,310 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:17:52] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:19:59,725 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:19:59] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 21:20:00,044 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:00] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2026-08-01 21:20:00,194 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:00] "GET /static/js/main.js HTTP/1.1" 200 -
+[ 2026-08-01 21:20:01,918 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-08-01 21:20:39,322 ] 185 root - INFO - Received prediction request for: Elena Rostova
+[ 2026-08-01 21:20:39,322 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:39,334 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:39,337 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:39,337 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:39,340 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:39,389 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:39,389 ] 230 root - INFO - Prediction result: Safe (Prob: 0.03)
+[ 2026-08-01 21:20:39,401 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:39] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:43,600 ] 185 root - INFO - Received prediction request for: Emily Chen
+[ 2026-08-01 21:20:43,600 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:43,600 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:43,600 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:43,600 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:43,600 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:43,664 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:43,664 ] 230 root - INFO - Prediction result: Low Risk (Prob: 0.20)
+[ 2026-08-01 21:20:43,664 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:43] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:45,462 ] 185 root - INFO - Received prediction request for: Emily Chen
+[ 2026-08-01 21:20:45,462 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:45,479 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:45,479 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:45,479 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:45,479 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:45,529 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:45,529 ] 230 root - INFO - Prediction result: Low Risk (Prob: 0.20)
+[ 2026-08-01 21:20:45,544 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:45] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:47,409 ] 185 root - INFO - Received prediction request for: Emily Chen
+[ 2026-08-01 21:20:47,409 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:47,409 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:47,409 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:47,409 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:47,425 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:47,476 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:47,476 ] 230 root - INFO - Prediction result: Low Risk (Prob: 0.20)
+[ 2026-08-01 21:20:47,476 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:47] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:50,641 ] 185 root - INFO - Received prediction request for: Sarah Jenkins
+[ 2026-08-01 21:20:50,641 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:50,641 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:50,641 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:50,641 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:50,641 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:50,694 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:50,694 ] 230 root - INFO - Prediction result: Low Risk (Prob: 0.27)
+[ 2026-08-01 21:20:50,706 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:50] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:53,320 ] 185 root - INFO - Received prediction request for: Sarah Jenkins
+[ 2026-08-01 21:20:53,321 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:53,324 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:53,325 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:53,326 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:53,326 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:53,376 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:53,376 ] 230 root - INFO - Prediction result: Low Risk (Prob: 0.27)
+[ 2026-08-01 21:20:53,376 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:53] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:55,480 ] 185 root - INFO - Received prediction request for: James Miller
+[ 2026-08-01 21:20:55,481 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:55,481 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:55,490 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:55,491 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:55,494 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:55,537 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:55,537 ] 230 root - INFO - Prediction result: Safe (Prob: 0.08)
+[ 2026-08-01 21:20:55,537 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:55] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:58,101 ] 185 root - INFO - Received prediction request for: David Stark
+[ 2026-08-01 21:20:58,101 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:58,101 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:58,101 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:58,101 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:58,118 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:58,151 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:58,151 ] 230 root - INFO - Prediction result: Low Risk (Prob: 0.23)
+[ 2026-08-01 21:20:58,167 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:58] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:20:59,931 ] 185 root - INFO - Received prediction request for: Marcus Vance
+[ 2026-08-01 21:20:59,932 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:20:59,932 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:20:59,932 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:20:59,932 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:20:59,932 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:20:59,968 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:20:59,968 ] 230 root - INFO - Prediction result: Medium Risk (Prob: 0.61)
+[ 2026-08-01 21:20:59,968 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:20:59] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:21:01,531 ] 185 root - INFO - Received prediction request for: Marcus Vance
+[ 2026-08-01 21:21:01,547 ] 15 root - INFO - Starting prediction pipeline
+[ 2026-08-01 21:21:01,547 ] 22 root - INFO - Loaded object from artifacts\scaler.pkl
+[ 2026-08-01 21:21:01,547 ] 22 root - INFO - Loaded object from artifacts\columns.pkl
+[ 2026-08-01 21:21:01,547 ] 22 root - INFO - Loaded object from artifacts\imputer_values.pkl
+[ 2026-08-01 21:21:01,547 ] 22 root - INFO - Loaded object from artifacts\model.pkl
+[ 2026-08-01 21:21:01,597 ] 64 root - INFO - Prediction completed successfully
+[ 2026-08-01 21:21:01,597 ] 230 root - INFO - Prediction result: Medium Risk (Prob: 0.61)
+[ 2026-08-01 21:21:01,597 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 21:21:01] "POST /predict HTTP/1.1" 200 -
+[ 2026-08-01 21:25:59,938 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\agarw\\Downloads\\Customer_Churn_prediction_project-main\\Customer_Churn_prediction_project-main\\src\\customer_churn\\components\\model_tranier.py', reloading

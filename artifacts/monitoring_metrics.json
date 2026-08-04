@@ -1,0 +1,16 @@
+[
+    {
+        "timestamp": "2026-08-01T21:14:01.022593",
+        "model_name": "Logistic Regression (SMOTE)",
+        "accuracy": 0.7381121362668559,
+        "f1_score": 0.6176165803108808,
+        "recall_score": 0.7967914438502673
+    },
+    {
+        "timestamp": "2026-08-01T21:32:16.823449",
+        "model_name": "Logistic Regression (SMOTE)",
+        "accuracy": 0.7381121362668559,
+        "f1_score": 0.6176165803108808,
+        "recall_score": 0.7967914438502673
+    }
+]

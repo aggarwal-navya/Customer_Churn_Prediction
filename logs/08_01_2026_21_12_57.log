@@ -1,0 +1,40 @@
+[ 2026-08-01 21:13:27,437 ] 8 root - INFO - main.py started - Triggering model training pipeline
+[ 2026-08-01 21:13:27,438 ] 16 root - INFO - Starting Training Pipeline
+[ 2026-08-01 21:13:27,438 ] 21 root - INFO - Entered the data ingestion method or component
+[ 2026-08-01 21:13:27,519 ] 25 root - INFO - Read the dataset as dataframe
+[ 2026-08-01 21:13:27,646 ] 31 root - INFO - Train test split initiated
+[ 2026-08-01 21:13:27,864 ] 41 root - INFO - Ingestion of the data is completed
+[ 2026-08-01 21:13:27,866 ] 24 root - INFO - Loading train and test datasets for transformation
+[ 2026-08-01 21:13:28,149 ] 28 root - INFO - Preprocessing train and test dataframes
+[ 2026-08-01 21:13:28,169 ] 50 root - INFO - Imputing TotalCharges missing values with training median: 1398.125
+[ 2026-08-01 21:13:28,182 ] 66 root - INFO - One-hot encoding categorical variables using pd.get_dummies
+[ 2026-08-01 21:13:28,265 ] 77 root - INFO - Applying StandardScaler
+[ 2026-08-01 21:13:28,284 ] 13 root - INFO - Saved object to artifacts\scaler.pkl
+[ 2026-08-01 21:13:28,286 ] 13 root - INFO - Saved object to artifacts\columns.pkl
+[ 2026-08-01 21:13:28,295 ] 13 root - INFO - Saved object to artifacts\imputer_values.pkl
+[ 2026-08-01 21:13:28,295 ] 89 root - INFO - Data transformation completed successfully
+[ 2026-08-01 21:13:28,298 ] 25 root - INFO - Splitting training and test input data
+[ 2026-08-01 21:13:28,298 ] 30 root - INFO - Applying SMOTE on training data
+[ 2026-08-01 21:13:31,931 ] 49 root - INFO - Evaluating models
+[ 2026-08-01 21:13:31,931 ] 53 root - INFO - Training model: Logistic Regression
+[ 2026-08-01 21:13:31,995 ] 67 root - INFO - Logistic Regression metrics - Accuracy: 0.8070, F1: 0.6092, Recall: 0.5668
+[ 2026-08-01 21:13:31,995 ] 53 root - INFO - Training model: Random Forest
+[ 2026-08-01 21:13:36,370 ] 67 root - INFO - Random Forest metrics - Accuracy: 0.7899, F1: 0.5529, Recall: 0.4893
+[ 2026-08-01 21:13:36,370 ] 53 root - INFO - Training model: Gradient Boosting
+[ 2026-08-01 21:13:40,187 ] 67 root - INFO - Gradient Boosting metrics - Accuracy: 0.7949, F1: 0.5693, Recall: 0.5107
+[ 2026-08-01 21:13:40,187 ] 53 root - INFO - Training model: XGBoost
+[ 2026-08-01 21:13:40,539 ] 67 root - INFO - XGBoost metrics - Accuracy: 0.8020, F1: 0.5842, Recall: 0.5241
+[ 2026-08-01 21:13:40,540 ] 53 root - INFO - Training model: CatBoost
+[ 2026-08-01 21:13:44,653 ] 67 root - INFO - CatBoost metrics - Accuracy: 0.8077, F1: 0.6009, Recall: 0.5455
+[ 2026-08-01 21:13:44,653 ] 53 root - INFO - Training model: Logistic Regression (SMOTE)
+[ 2026-08-01 21:13:44,746 ] 67 root - INFO - Logistic Regression (SMOTE) metrics - Accuracy: 0.7381, F1: 0.6176, Recall: 0.7968
+[ 2026-08-01 21:13:44,746 ] 53 root - INFO - Training model: Gradient Boosting (SMOTE)
+[ 2026-08-01 21:13:51,806 ] 67 root - INFO - Gradient Boosting (SMOTE) metrics - Accuracy: 0.7821, F1: 0.6148, Recall: 0.6551
+[ 2026-08-01 21:13:51,806 ] 53 root - INFO - Training model: CatBoost (SMOTE)
+[ 2026-08-01 21:14:00,989 ] 67 root - INFO - CatBoost (SMOTE) metrics - Accuracy: 0.7807, F1: 0.6033, Recall: 0.6283
+[ 2026-08-01 21:14:00,989 ] 90 root - INFO - Best model found: Logistic Regression (SMOTE) with F1-score: 0.6176
+[ 2026-08-01 21:14:00,989 ] 96 root - INFO - Saving best model to artifacts\model.pkl
+[ 2026-08-01 21:14:00,998 ] 13 root - INFO - Saved object to artifacts\model.pkl
+[ 2026-08-01 21:14:01,022 ] 14 root - INFO - Initiating model monitoring metric logging
+[ 2026-08-01 21:14:01,025 ] 41 root - INFO - Successfully logged monitoring metrics for Logistic Regression (SMOTE)
+[ 2026-08-01 21:14:01,031 ] 39 root - INFO - Training Pipeline completed successfully
