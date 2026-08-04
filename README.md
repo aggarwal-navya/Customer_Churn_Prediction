@@ -222,17 +222,6 @@ The best-performing model is automatically saved and used by the prediction pipe
 
 ---
 
-# 💡 Future Improvements
-
-- Cloud Deployment (AWS / Azure)
-- Explainable AI using SHAP
-- CI/CD Pipeline
-- Batch Predictions
-- REST API
-- Model Monitoring
-
----
-
 # 👩‍💻 Author
 
 **Navya Aggarwal**
