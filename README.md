@@ -240,8 +240,8 @@ The best-performing model is automatically saved and used by the prediction pipe
 AI & Machine Learning | Data Analytics
 
 - GitHub: https://github.com/aggarwal-navya
-- LinkedIn: *Add your LinkedIn URL*
-- Portfolio: *Add your Portfolio URL*
+- LinkedIn: https://www.linkedin.com/in/navya-aggarwal14/
+- Portfolio: https://navyaaggarwal.vercel.app/
 
 ---
 
