@@ -1,112 +1,248 @@
-# ChurnGuardPro - Customer Churn Prediction Dashboard
+<div align="center">
 
-ChurnGuardPro is an end-to-end Machine Learning engineering project that transforms exploratory customer analysis into a production-ready, interactive web dashboard. It features robust pipelines, MLflow experiment tracking, and a glassmorphic dark-theme executive user interface.
+# 📉 Customer Churn Prediction
+
+### An End-to-End Machine Learning Pipeline for Predicting Customer Churn
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+**A production-ready machine learning application that predicts customer churn using an automated ML pipeline, MLflow experiment tracking, and a Flask web interface.**
+
+</div>
 
 ---
 
-## 📂 Project Structure
+# 📌 Project Overview
 
-```
+Customer churn is one of the biggest challenges for subscription-based businesses. Identifying customers who are likely to leave allows organizations to improve customer retention through proactive engagement.
+
+This project builds an end-to-end Machine Learning pipeline that automates data ingestion, preprocessing, model training, evaluation, and prediction through an interactive Flask application.
+
+---
+
+# ✨ Features
+
+- End-to-End Machine Learning Pipeline
+- Automated Data Ingestion & Preprocessing
+- Feature Engineering
+- Model Training & Evaluation
+- MLflow Experiment Tracking
+- Flask Web Application
+- Prediction Pipeline
+- Docker Support
+- Modular Project Structure
+- Logging & Exception Handling
+
+---
+
+# 🛠 Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Flask
+- MLflow
+- Docker
+- Git & GitHub
+
+---
+
+# 📂 Project Structure
+
+```text
+Customer_Churn_Prediction/
+│
 ├── data/
-│   └── Telco-Customer-Churn.csv       # Raw dataset
+│   └── Telco-Customer-Churn.csv
+│
 ├── artifacts/
-│   ├── train.csv                      # Partitioned training data
-│   └── test.csv                       # Partitioned testing data
+│   ├── train.csv
+│   └── test.csv
+│
 ├── models/
-│   ├── churn_model.pkl                # Trained Gradient Boosting weights
-│   ├── scaler.pkl                     # Fitted StandardScaler instance
-│   ├── model_columns.pkl              # Schema categories for dummy alignment
-│   ├── metrics.json                   # Current pipeline evaluation metrics
-│   └── feature_importance.json        # Top 5 predictive churn drivers
+│   ├── churn_model.pkl
+│   ├── scaler.pkl
+│   ├── model_columns.pkl
+│   ├── metrics.json
+│   └── feature_importance.json
+│
 ├── src/
-│   └── customer_churn_prediction/     # Pipeline package
-│       ├── components/                # Ingestion, transformation, training
-│       ├── pipelines/                 # Training and prediction pipelines
-│       ├── logger.py                  # Structured logger
-│       ├── exception.py               # Custom Exception Handler
-│       └── utils.py                   # Serialization utilities
+│   └── customer_churn_prediction/
+│       ├── components/
+│       ├── pipelines/
+│       ├── logger.py
+│       ├── exception.py
+│       └── utils.py
+│
 ├── templates/
-│   └── index.html                     # Bento dashboard HTML UI
 ├── static/
-│   ├── style.css                      # Glassmorphic dark styling rules
-│   └── script.js                      # Chart.js and SSE log streaming logic
-├── customer-churn.ipynb               # Original Notebook (preserved for EDA)
-├── app.py                             # Flask server routes
-├── main.py                            # CLI training execution script
-├── Dockerfile                         # Container configuration
-├── requirements.txt                   # Dependency list
-└── setup.py                           # Packaging setup
+├── app.py
+├── main.py
+├── Dockerfile
+├── requirements.txt
+└── setup.py
 ```
 
 ---
 
-## ⚡ How to Run the Project
+# ⚙️ ML Pipeline
 
-### Prerequisites
-Make sure Python 3.9+ is installed on your local system.
-
-### 1. Set Up the Virtual Environment
-Open a terminal in the project root directory and run:
-```bash
-# Create a virtual environment
-python -m venv .venv
-
-# Activate the environment (Windows)
-.venv\Scripts\activate
-
-# Activate the environment (macOS/Linux)
-source .venv/bin/activate
+```text
+Raw Dataset
+      │
+      ▼
+Data Ingestion
+      │
+      ▼
+Data Preprocessing
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Model Training
+      │
+      ▼
+Model Evaluation
+      │
+      ▼
+MLflow Tracking
+      │
+      ▼
+Best Model Saved
+      │
+      ▼
+Prediction Pipeline
+      │
+      ▼
+Flask Dashboard
 ```
 
-### 2. Install Dependencies
-Install all the required python packages and register the local package namespaces:
+---
+
+# 📊 Dataset
+
+**Dataset:** IBM Telco Customer Churn Dataset
+
+The dataset contains customer information including:
+
+- Customer demographics
+- Service subscriptions
+- Contract details
+- Payment methods
+- Monthly & Total Charges
+- Customer tenure
+
+**Target Variable**
+
+- Churn (Yes / No)
+
+---
+
+# 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone https://github.com/aggarwal-navya/Customer_Churn_Prediction.git
+
+cd Customer_Churn_Prediction
+```
+
+### Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 pip install -e .
 ```
 
-### 3. Run the Training Pipeline (Optional)
-The pre-trained model weights are already provided in the `models/` directory. However, to re-run the end-to-end pipeline (Data Ingestion ➔ Data Transformation ➔ Model Training with SMOTE ➔ MLflow Tracking), run:
+### Train the Model (Optional)
+
 ```bash
 python main.py
 ```
-This logs the metrics and parameters in a local SQLite database (`mlflow.db`) under the experiment `Telco_Customer_Churn_Prediction`.
 
-### 4. Start the Flask Application
-Run the Flask server backend locally:
+### Run the Flask Application
+
 ```bash
 python app.py
 ```
-By default, the server starts up on port **`5001`**. Once running, navigate to:
-👉 **[http://127.0.0.1:5001](http://127.0.0.1:5001)**
 
-### 5. Running with Docker (Containerized Mode)
-To run the entire application inside a container (which handles compilation of all dependencies automatically):
+Visit:
+
+```
+http://127.0.0.1:5001
+```
+
+---
+
+# 🐳 Docker
+
+Build
+
 ```bash
-# Build the Docker image
 docker build -t churnguard-pro .
+```
 
-# Run the container
+Run
+
+```bash
 docker run -p 5001:5001 churnguard-pro
 ```
 
 ---
 
-## ⚠️ Transferring to a New PC (Avoid Path Errors)
+# 📈 Model Evaluation
 
-If you copy the project to another computer and run into errors containing path links like `C:\Users\agarw\...`, it is because **virtual environments and editable installations are machine-specific**. 
+The model is evaluated using:
 
-Follow these steps to migrate the project cleanly:
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC Score
 
-1. **Do NOT copy the `.venv` folder:** Virtual environments contain hardcoded absolute paths pointing to the original computer. Delete the `.venv` folder on the new computer.
-2. **Recreate the environment:** Create a fresh virtual environment on the new PC:
-   ```bash
-   python -m venv .venv
-   ```
-3. **Reinstall dependencies:** Activate the new virtual environment and run:
-   ```bash
-   pip install -r requirements.txt
-   pip install -e .
-   ```
-   Re-running `pip install -e .` updates the local configuration links (like `.egg-link` and `.egg-info` records) to point to the new folder location.
+The best-performing model is automatically saved and used by the prediction pipeline.
 
+---
+
+# 📷 Application Preview
+
+> Add screenshots of:
+>
+> - Dashboard
+> - Prediction Form
+> - Prediction Result
+> - MLflow Experiment Tracking
+
+---
+
+# 💡 Future Improvements
+
+- Cloud Deployment (AWS / Azure)
+- Explainable AI using SHAP
+- CI/CD Pipeline
+- Batch Predictions
+- REST API
+- Model Monitoring
+
+---
+
+# 👩‍💻 Author
+
+**Navya Aggarwal**
+
+AI & Machine Learning | Data Analytics
+
+- GitHub: https://github.com/aggarwal-navya
+- LinkedIn: *Add your LinkedIn URL*
+- Portfolio: *Add your Portfolio URL*
+
+---
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
